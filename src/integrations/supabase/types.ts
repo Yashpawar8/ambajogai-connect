@@ -14,7 +14,135 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      academic_info: {
+        Row: {
+          created_at: string
+          department: string | null
+          details: string
+          id: string
+          semester: number | null
+          title: string
+          type: string
+        }
+        Insert: {
+          created_at?: string
+          department?: string | null
+          details: string
+          id?: string
+          semester?: number | null
+          title: string
+          type: string
+        }
+        Update: {
+          created_at?: string
+          department?: string | null
+          details?: string
+          id?: string
+          semester?: number | null
+          title?: string
+          type?: string
+        }
+        Relationships: []
+      }
+      attendance: {
+        Row: {
+          attended: number
+          id: string
+          subject: string
+          total: number
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          attended?: number
+          id?: string
+          subject: string
+          total?: number
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          attended?: number
+          id?: string
+          subject?: string
+          total?: number
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      faqs: {
+        Row: {
+          answer: string
+          created_at: string
+          id: string
+          keywords: string[]
+          question: string
+        }
+        Insert: {
+          answer: string
+          created_at?: string
+          id?: string
+          keywords?: string[]
+          question: string
+        }
+        Update: {
+          answer?: string
+          created_at?: string
+          id?: string
+          keywords?: string[]
+          question?: string
+        }
+        Relationships: []
+      }
+      notices: {
+        Row: {
+          body: string
+          category: string
+          id: string
+          posted_at: string
+          title: string
+        }
+        Insert: {
+          body: string
+          category?: string
+          id?: string
+          posted_at?: string
+          title: string
+        }
+        Update: {
+          body?: string
+          category?: string
+          id?: string
+          posted_at?: string
+          title?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string | null
+          id: string
+          prn: string | null
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id: string
+          prn?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id?: string
+          prn?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
