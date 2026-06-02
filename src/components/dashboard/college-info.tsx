@@ -10,10 +10,9 @@ const departments = [
 ];
 
 const faculty = [
-  { name: "Dr. S. R. Deshmukh", role: "Principal" },
-  { name: "Prof. A. K. Patil", role: "HOD — Computer Science" },
-  { name: "Prof. M. P. Joshi", role: "HOD — Mechanical" },
-  { name: "Prof. R. V. Kulkarni", role: "HOD — E&TC" },
+  { name: "Dr. Khadakbhave Sir", role: "Principal" },
+  { name: "Prof. Kulkarni Sir", role: "HOD — Computer Science" },
+  { name: "Prof. Yerigiri Sir", role: "HOD — Electronics & Telecommunication" },
 ];
 
 const facilities = [
