@@ -9,6 +9,7 @@ import { ChatbotTab } from "@/components/dashboard/chatbot";
 import { NoticeBoardTab } from "@/components/dashboard/notice-board";
 import { AcademicsTab } from "@/components/dashboard/academics";
 import { AttendanceTab } from "@/components/dashboard/attendance";
+import { AuthorityTab } from "@/components/dashboard/authority";
 
 export const Route = createFileRoute("/dashboard")({
   head: () => ({ meta: [{ title: "Dashboard — MBES Ambajogai" }] }),
@@ -57,12 +58,14 @@ function Dashboard() {
             <TabsTrigger value="notices">Notice Board</TabsTrigger>
             <TabsTrigger value="academics">Academics</TabsTrigger>
             <TabsTrigger value="attendance">Attendance</TabsTrigger>
+            <TabsTrigger value="authority">Authority</TabsTrigger>
           </TabsList>
           <TabsContent value="chatbot"><ChatbotTab /></TabsContent>
           <TabsContent value="college"><CollegeInfoTab /></TabsContent>
           <TabsContent value="notices"><NoticeBoardTab /></TabsContent>
           <TabsContent value="academics"><AcademicsTab /></TabsContent>
           <TabsContent value="attendance"><AttendanceTab /></TabsContent>
+          <TabsContent value="authority"><AuthorityTab /></TabsContent>
         </Tabs>
       </main>
     </div>
